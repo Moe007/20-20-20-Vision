@@ -1,0 +1,120 @@
+
+
+.visionModal {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    perspective: 200px;
+    perspective-origin: 50% 0;
+}
+
+.visionModal-dialog {
+    background-image: radial-gradient(circle, #abff00, #95ff00, #7bff00, #5aff00, #1aff00);
+    left: 50%;
+    line-height: 20px;
+    margin-left: -250px;
+    margin-top: 5px;
+    position: absolute;
+    top: 50%;
+    transition: all .5s ease;
+    width: 500px;
+    padding: 20px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+    border-radius: 18px;
+    animation: modal-rotate-animation .5s ease;
+}
+
+  .visionModal-dialog::before,
+  .visionModal-dialog::after{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-image: radial-gradient(circle, #89dd00, #73dd00, #59dd00, #38dd00, #08dd00);
+    border-radius: 18px;
+    transform: scale(0.9) translate(0,0);
+    transition: all 0.3s ease;
+  }
+
+  .visionModal-dialog::after{
+    transition-delay: 0.02s;
+    background-image: radial-gradient(circle, #67bb00, #51bb00, #37bb00, #16bb00, #06bb00);
+  }
+
+  .visionModal-dialog:hover::before{
+    transform: scale(0.96) translate(0,16px);
+  }
+
+  .visionModal-dialog:hover::after{
+    transform: scale(0.92) translate(0,32px);
+    z-index: -2;
+  }
+
+
+.visionModal-dialog h3, h5, ul, button{
+  color: #333;
+}
+
+.visionModal-dialog ul{
+    list-style: circle;
+}
+
+.hideModal .visionModal-dialog{
+    animation: modal-rotate-animation-out .5s ease;
+    display: none;
+}
+
+.visionModal-dialog button{
+    margin: 7px auto;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    border-color: rgba(171,255,0,0.8);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px #abff00;
+    border-radius: 10px;
+    display: block;
+    width: 60%;
+    height: fit-content;
+    background-image: linear-gradient(to right, #abff00, #95ff00, #7bff00, #5aff00, #1aff00);
+}
+
+.visionModal-dialog button:hover{
+    background-position: right center;
+}
+
+@keyframes modal-rotate-animation {
+  from {
+    top: 0;
+    left: 100%;
+    transform: rotateX(-90deg) translate(0, -50%);
+  }
+  to {
+    top: 50%;
+    transform: rotateX(0deg) translate(0, 0);
+  }
+}
+
+@keyframes modal-rotate-animation-out {
+  to {
+    top: 50%;
+    transform: rotateX(0deg) translate(0, 0);
+  }
+  to {
+    top: 100%;
+    transform: rotateX(90deg) translate(0, 50%);
+  }
+}

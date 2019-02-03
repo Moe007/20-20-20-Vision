@@ -1,0 +1,32 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    background-image: radial-gradient(circle, #abff00, #95ff00, #7bff00, #5aff00, #1aff00);
+    left: 50%;
+    line-height: 20px;
+    padding: 20px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+}
+
+button{
+    margin: 7px auto;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    border-color: rgba(171,255,0,0.8);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px #abff00;
+    border-radius: 10px;
+    display: block;
+    width: 60%;
+    height: fit-content;
+    background-image: linear-gradient(to right, #abff00, #95ff00, #7bff00, #5aff00, #1aff00);
+}
+
+button:enabled:hover{
+    background-position: right center;
+}
+
+button:disabled{
+    background-image: radial-gradient(circle, #67bb00, #51bb00, #37bb00, #16bb00, #06bb00);
+}
