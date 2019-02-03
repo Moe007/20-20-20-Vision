@@ -23,10 +23,22 @@ button{
     background-image: linear-gradient(to right, #abff00, #95ff00, #7bff00, #5aff00, #1aff00);
 }
 
-button:enabled:hover{
-    background-position: right center;
+    button:enabled:hover{
+        background-position: right center;
+    }
+
+    button:disabled{
+        background-image: radial-gradient(circle, #67bb00, #51bb00, #37bb00, #16bb00, #06bb00);
+    }
+
+footer a{
+    text-decoration: none;
 }
 
-button:disabled{
-    background-image: radial-gradient(circle, #67bb00, #51bb00, #37bb00, #16bb00, #06bb00);
+footer a i{
+    color: #06bb00;
+}
+
+hr{
+    opacity: 0.3;
 }
