@@ -2,6 +2,10 @@
 	"manifest_version": 2,
 	"name": "20/20/20 Vision",
 	"version": "0.1",
+	"icons": {
+		"19": "res/20VisionIcon.png",
+		"128": "res/20Vision_128.png"
+	},
 	"background": {
 		"page": "background/bg.html",
 		"persistent": false
