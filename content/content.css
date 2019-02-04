@@ -64,7 +64,7 @@
   }
 
 
-.visionModal-dialog h3, h5, ul, button{
+.visionModal-dialog  *{
   color: #333;
 }
 
