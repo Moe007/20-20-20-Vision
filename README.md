@@ -9,7 +9,23 @@ This rule is essential for everyone today, as almost everyone uses a
 computer screen everyday. Following this rule would mean less eye strain, 
 better eyesight and less headaches.
 
-<a target="_blank" href="https://chrome.google.com/webstore/detail/202020-vision/lknjmkdopggoignpeekjhlldnmlfibef">![Try it now in CWS](https://raw.github.com/GoogleChrome/chrome-app-samples/master/tryitnowbutton.png "Click here to install this extension from the Chrome Web Store")</a>
+
+## To Install:
+### Via Chrome Webstore:
+
+<a href="https://chrome.google.com/webstore/detail/202020-vision/lknjmkdopggoignpeekjhlldnmlfibef">![](https://raw.github.com/GoogleChrome/chrome-app-samples/master/tryitnowbutton.png)</a>
+
+
+
+### Via Github:
+1. Click the "clone or download" button.
+2. Click "Download Zip".
+3. Extract the downloaded zip file.
+4. Go to Chrome and navigate to chrome://extensions.
+5. Click "Load unpacked".
+6. Select the extracted folder.
+
+
 
 ![](https://lh3.googleusercontent.com/IKOOakjGlZxOUlhxhr7T3tPxDp5gkQWqxPfH0IAeD5KMZdH0-uWM1IvAtuNnd0hRVSr63uf1Tw=w640-h400-e365)
 
