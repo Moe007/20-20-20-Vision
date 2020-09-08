@@ -11,7 +11,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
             $('.visionModal-dialog').append("<h5>Here are some things you should do:</h5>");
             $('.visionModal-dialog').append("<ul></ul>");
             $('.visionModal-dialog ul').append("<li>Look at an object ,about ,20 feet away for 20 seconds</li>");
-            $('.visionModal-dialog ul').append("<li>Slowy blink 20 times</li>");
+            $('.visionModal-dialog ul').append("<li>Slowly blink 20 times</li>");
             $('.visionModal-dialog ul').append("<li>Stand up from your seat and do some mobility exercises</li>");
             $('.visionModal-dialog').append("<button id='visionClose'>Close</button>");
             $('.visionModal-dialog').append("<button id='visionCloseStart'>Close and start timer again</button>");
